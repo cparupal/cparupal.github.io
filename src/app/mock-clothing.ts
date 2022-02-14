@@ -3,9 +3,9 @@ import { Clothing } from "./clothing";
 export const CLOTHING: Clothing[] = [
     {id: 1, name: "Red Shirt", desc: "This is a Red Shirt", imgsrc: "assets/images/clothes/buy-1.jpg", price: 19.99},
     {id: 2, name: "Yellow Shirt", desc: "This is a Yellow Shirt", imgsrc: "assets/images/clothes/yellowshirt.jpeg", price: 29.99},
-    {id: 3, name: "Blue Shirt", desc: "This is a Blue Shirt", imgsrc: "assets/images/clothes/buy-1.jpg", price: 39.99},
-    {id: 4, name: "Green Shirt", desc: "This is a Green Shirt", imgsrc: "assets/images/clothes/buy-1.jpg", price: 49.99},
-    {id: 5, name: "Black Shirt", desc: "This is a Black Shirt", imgsrc: "assets/images/clothes/buy-1.jpg", price: 59.99}
+    {id: 3, name: "Blue Shirt", desc: "This is a Blue Shirt", imgsrc: "assets/images/clothes/blueshirt.jpeg", price: 39.99},
+    {id: 4, name: "Green Shirt", desc: "This is a Green Shirt", imgsrc: "assets/images/clothes/greenshirt.jpeg", price: 49.99},
+    {id: 5, name: "Black Shirt", desc: "This is a Black Shirt", imgsrc: "assets/images/clothes/blackshirt", price: 59.99}
 
 ]
 
