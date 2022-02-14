@@ -5,7 +5,7 @@ export const CLOTHING: Clothing[] = [
     {id: 2, name: "Yellow Shirt", desc: "This is a Yellow Shirt", imgsrc: "assets/images/clothes/yellowshirt.jpeg", price: 29.99},
     {id: 3, name: "Blue Shirt", desc: "This is a Blue Shirt", imgsrc: "assets/images/clothes/blueshirt.jpeg", price: 39.99},
     {id: 4, name: "Green Shirt", desc: "This is a Green Shirt", imgsrc: "assets/images/clothes/greenshirt.jpeg", price: 49.99},
-    {id: 5, name: "Black Shirt", desc: "This is a Black Shirt", imgsrc: "assets/images/clothes/blackshirt", price: 59.99}
+    {id: 5, name: "Black Shirt", desc: "This is a Black Shirt", imgsrc: "assets/images/clothes/blackshirt.jpeg", price: 59.99}
 
 ]
 
