@@ -6,7 +6,7 @@
             <p>{{cloth.name}}</p>
             <p class="price">${{cloth.price}}</p>
             <p>{{cloth.desc}}</p>
-            <p><button>Add to Cart</button></p>
+            <p><button (click)="addItemToCart(cloth)">Add to Cart</button></p>
         </div>
     </mat-grid-tile>
     

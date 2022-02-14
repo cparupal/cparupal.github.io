@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<ul class="cart">
+    <mat-grid-list cols="1" rowHeight="2:1">  
+      <mat-grid-tile *ngFor="let item of cart">
+          <div class="card">
+              <img [src]=item.imgsrc>
+              <p>{{item.name}}</p>
+              <p class="price">${{item.price}}</p>
+          </div>
+      </mat-grid-tile>
+      
+    </mat-grid-list>
+  </ul>

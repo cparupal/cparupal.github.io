@@ -9,7 +9,10 @@ import { SHOES } from './mock-clothing';
 })
 export class ClothService {
 
-  constructor() { }
+  cart: Clothing[] = [];
+
+  constructor() { 
+  }
 
   getClothingItems(): Clothing[]{
     return CLOTHING;
@@ -17,5 +20,15 @@ export class ClothService {
 
   getShoeItems(): Clothing[]{
     return SHOES;
+  }
+
+  addItemToCart(item: Clothing): void{
+    //console.log("inside cloth service addItemToCart " + JSON.stringify(item));
+    this.cart.push(item);
+    //console.log("after add: " + JSON.stringify(this.cart));
+  }
+
+  getCartItems(): Clothing[]{
+    return this.cart;
   }
 }

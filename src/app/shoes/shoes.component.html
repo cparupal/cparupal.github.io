@@ -6,7 +6,7 @@
               <p>{{shoe.name}}</p>
               <p class="price">${{shoe.price}}</p>
               <p>{{shoe.desc}}</p>
-              <p><button>Add to Cart</button></p>
+              <p><button (click)="addItemToCart(shoe)">Add to Cart</button></p>
           </div>
       </mat-grid-tile>
       

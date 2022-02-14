@@ -20,4 +20,9 @@ export class ShoesComponent implements OnInit {
     this.getItems();
   }
 
+  addItemToCart(shoe: Clothing): void{
+    //console.log("inside cloth componenet addItemToCart " + JSON.stringify(shoe));
+    this.clothService.addItemToCart(shoe);
+  }
+
 }
