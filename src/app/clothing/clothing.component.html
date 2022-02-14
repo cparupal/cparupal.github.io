@@ -1,0 +1,14 @@
+<ul class="clothings">
+  <mat-grid-list cols="3" rowHeight="2:2">  
+    <mat-grid-tile *ngFor="let cloth of clothings">
+        <div class="card">
+            <img [src]=cloth.imgsrc>
+            <p>{{cloth.name}}</p>
+            <p class="price">${{cloth.price}}</p>
+            <p>{{cloth.desc}}</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </mat-grid-tile>
+    
+  </mat-grid-list>
+</ul>
