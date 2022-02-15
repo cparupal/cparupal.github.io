@@ -1,14 +1,12 @@
 <h2>Your Cart</h2>
 <h2>Total: ${{this.totalPrice}}</h2>
 <ul class="cart">
-    <mat-grid-list cols="1" rowHeight="200px">  
+    <mat-grid-list cols="1" rowHeight="300px">  
       <mat-grid-tile *ngFor="let item of cart">
-          <div class="card">
-              <img [src]=item.imgsrc>
-              <p>{{item.name}}</p>
-              <p class="price">${{item.price}}</p>
-              <p><button (click)="removeItem(item)">Remove</button></p>
-          </div>
+          <img [src]=item.imgsrc>
+          <p>{{item.name}}</p>
+          <p class="price">${{item.price}}</p>
+          <button (click)="removeItem(item)">Remove</button>
       </mat-grid-tile>
     </mat-grid-list>
   </ul>

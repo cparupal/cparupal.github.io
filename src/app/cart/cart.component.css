@@ -6,6 +6,11 @@
     font-family: arial;
     object-fit: contain;
   }
+
+  .mat-grid-tile-content
+{
+    flex-direction: column;
+} 
   
   .price {
     color: grey;

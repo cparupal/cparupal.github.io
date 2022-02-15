@@ -10,9 +10,9 @@ export const CLOTHING: Clothing[] = [
 ]
 
 export const SHOES: Clothing[] = [
-    {id: 101, name: "Black Sneakers", desc: "Pair of Black Sneakers", imgsrc: "assets/images/buy-1.jpg", price: 19.99},
-    {id: 102, name: "Blue Sneakers", desc: "Pair of Blue Sneakers", imgsrc: "/images/buy-1.jpg", price: 29.99},
-    {id: 103, name: "Yellow Sneakers", desc: "Pair of Green Sneakers", imgsrc: "/images/buy-1.jpg", price: 39.99},
-    {id: 104, name: "White Sneakers", desc: "Pair of White Sneakers", imgsrc: "/images/buy-1.jpg", price: 49.99},
-    {id: 105, name: "Green Sneakers", desc: "Pair of Black Sneakers", imgsrc: "/images/buy-1.jpg", price: 59.99}
+    {id: 101, name: "Black Sneakers", desc: "Pair of Black Sneakers", imgsrc: "assets/images/shoes/blackshoes.jpeg", price: 19.99},
+    {id: 102, name: "Blue Sneakers", desc: "Pair of Blue Sneakers", imgsrc: "assets/images/shoes/blueshoes.jpeg", price: 29.99},
+    {id: 103, name: "Orange Sneakers", desc: "Pair of Orange Sneakers", imgsrc: "assets/images/shoes/orangeshoes.jpeg", price: 39.99},
+    {id: 104, name: "White Sneakers", desc: "Pair of White Sneakers", imgsrc: "assets/images/shoes/whiteshoes.jpeg", price: 49.99},
+    {id: 105, name: "Green Sneakers", desc: "Pair of Green Sneakers", imgsrc: "assets/images/shoes/greenshoes.jpeg", price: 59.99}
 ]

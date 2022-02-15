@@ -9,6 +9,7 @@ import { ClothingComponent } from './clothing/clothing.component';
 import { ShoesComponent } from './shoes/shoes.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list'; 
+import {MatButtonModule} from '@angular/material/button';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { CartComponent } from './cart/cart.component';
@@ -27,6 +28,7 @@ import { CartComponent } from './cart/cart.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatGridListModule,
+    MatButtonModule,
     HttpClientInMemoryWebApiModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
