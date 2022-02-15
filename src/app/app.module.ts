@@ -20,7 +20,7 @@ import { CartComponent } from './cart/cart.component';
     NavigationbarComponent,
     ClothingComponent,
     ShoesComponent,
-    CartComponent
+    CartComponent,
   ],
   imports: [
     BrowserModule,
