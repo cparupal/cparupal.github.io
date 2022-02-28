@@ -1,0 +1,3 @@
+[submodule "swe632v2"]
+	path = swe632v2
+	url = https://github.com/cparupal/swe632v2.git
