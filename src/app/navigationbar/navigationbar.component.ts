@@ -1,6 +1,7 @@
 import { analyzeAndValidateNgModules } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { NavBarService } from '../navbar.service';
+import { ClothService } from '../cloth.service';
 import { Subscription } from 'rxjs';
     
 
@@ -11,16 +12,21 @@ import { Subscription } from 'rxjs';
 })
 export class NavigationbarComponent implements OnInit {
 
+  notifierSubscription: Subscription = this.clothService.subjectNotifier.subscribe(notified => {
+    // originator has notified me. refresh my data here.
+    this.totalItems = this.clothService.getTotal();
+  });
   homecolor = '';
   clothingcolor = '';
   shoescolor = '';
   cartcolor = '';
   arr: string[] = [];
+  totalItems = 0;
 
   messageReceived: any;
   //private subscriptionName: Subscription; //important to create a subscription
 
-  constructor(private navbarService: NavBarService) { 
+  constructor(private clothService: ClothService) { 
     // subscribe to sender component messages
     /*this.subscriptionName = this.navbarService.getUpdate().subscribe
     (message => { //message contains the data sent from service
@@ -35,6 +41,7 @@ export class NavigationbarComponent implements OnInit {
   ngOnInit(): void {
     //this.navbarService.toggleColor(1);
     //this.setValues();
+    this.totalItems = this.clothService.getTotal();
   }
 
   /*
