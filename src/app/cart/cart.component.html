@@ -1,12 +1,14 @@
 <h2>Your Cart</h2>
-<h2>Total: ${{this.totalPrice}}</h2>
+<h2>Total: ${{this.totalPrice.toFixed(2)}}</h2>
+<button mat-flat-button>Checkout</button>
+
 <ul class="cart">
     <mat-grid-list cols="1" rowHeight="300px">  
       <mat-grid-tile *ngFor="let item of cart">
           <img [src]=item.imgsrc>
           <p>{{item.name}}</p>
           <p class="price">${{item.price}}</p>
-          <button (click)="removeItem(item)">Remove</button>
+          <button mat-flat-button (click)="removeItem(item)">Remove</button>
       </mat-grid-tile>
     </mat-grid-list>
   </ul>

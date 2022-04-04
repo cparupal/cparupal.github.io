@@ -13,6 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { CartComponent } from './cart/cart.component';
+//import { BasicSnackbarComponent } from './basic-snackbar/basic-snackbar.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 @NgModule({
   declarations: [
@@ -30,6 +32,7 @@ import { CartComponent } from './cart/cart.component';
     MatGridListModule,
     MatButtonModule,
     HttpClientInMemoryWebApiModule,
+    MatSnackBarModule,
 
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.

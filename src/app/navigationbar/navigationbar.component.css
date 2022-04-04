@@ -19,7 +19,7 @@ h2 {
   }
   
   a {
-    background-color: #3f525c;
+    background-color: #346179;
     border-radius: 2px;
     padding: 1rem;
     font-size: 1.2rem;
@@ -46,9 +46,5 @@ h2 {
   }
   
   a:hover {
-    background-color: #000;
-  }
-
-  a:active {
-    background-color: red;
+    background-color: rgb(23, 67, 124);
   }
