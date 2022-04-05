@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { NavBarService } from '../navbar.service';
 import { ClothService } from '../cloth.service';
 import { Subscription } from 'rxjs';
+import { MatBadgeModule } from '@angular/material/badge';
     
 
 @Component({
