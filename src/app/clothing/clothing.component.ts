@@ -13,6 +13,8 @@ import { MatSnackBar } from "@angular/material/snack-bar";
 export class ClothingComponent implements OnInit {
 
   clothings: Clothing[] = [];
+  sizes: string[] = ["XS","S","M","L", "XL"];
+  selected: string = "XS";
 
   constructor(private clothService: ClothService, private navbarService: NavBarService, private snackBar: MatSnackBar) { }
 
@@ -26,9 +28,12 @@ export class ClothingComponent implements OnInit {
   }
 
   addItemToCart(cloth: Clothing): void{
-    //console.log("inside cloth componenet addItemToCart " + JSON.stringify(cloth));
+    console.log("inside cloth componenet addItemToCart " + JSON.stringify(cloth));
+    console.log("Size: " + JSON.stringify(this.selected));
+    cloth.size = this.selected;
     this.clothService.addItemToCart(cloth);
-    this.showSnackbar("Added " + cloth.name + " to Cart!")
+    this.showSnackbar("Added " + cloth.name + " to Cart!");
+    this.selected = "XS";
   }
 
   showSnackbar(content: any) {
@@ -40,6 +45,13 @@ export class ClothingComponent implements OnInit {
   sendMessage(): void {
     // send message to subscribers via observable subject
     this.navbarService.sendUpdate(2);
-}
+  }
+
+  selectSize (event: any) {
+    //update the ui
+    console.log("Event: " + JSON.stringify(event));
+    this.selected = event.target.value;
+  }
+
 
 }

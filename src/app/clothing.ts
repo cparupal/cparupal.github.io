@@ -4,4 +4,5 @@ export interface Clothing {
     desc: string;
     imgsrc: string;
     price: number;
+    size: string;
 }

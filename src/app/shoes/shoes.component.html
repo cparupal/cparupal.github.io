@@ -6,6 +6,13 @@
               <img [src]=shoe.imgsrc>
               <p>{{shoe.name}}</p>
               <p class="price">${{shoe.price}}</p>
+              <p>Size: <select (change)="selectSize($event)">
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select></p>
               <p>{{shoe.desc}}</p>
               <p><button (click)="addItemToCart(shoe)">Add to Cart</button></p>
           </div>
